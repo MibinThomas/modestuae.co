@@ -15,7 +15,7 @@ import WhyChooseUsSection from '../Section/WhyChooseUsSection';
 
 const heroData = [
   {
-    bgUrl: '/images/hero_slider_1.jpeg',
+    bgUrl: '/images/hero_main_1.jpg',
     titleUp: 'This Week Only for World Premier',
     title: 'Inventive and interested <br>in innovation',
     subTitle:
@@ -53,9 +53,9 @@ const movingTextData = [
 const serviceData = [
   {
     iconUrl: '/images/icons/service_icon_1.svg',
-    title: 'Accounting and Bookkeeping',
+    title: 'Audit & Assurance',
     subTitle:
-      'Services related to financial record-keeping, bookkeeping, preparation and action.',
+      'Independent audit and assurance services to ensure transparency and regulatory compliance',
     imgUrl: '/images/service_1.jpeg',
     href: '/service/services-details',
   },

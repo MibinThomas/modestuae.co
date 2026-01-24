@@ -31,14 +31,14 @@ export default function Footer() {
             </h2>
           </div>
           <div className="cs_footer_logo">
-            <img src="/images/logo.svg" alt="Logo" />
+            <img src="/images/modest2.svg" alt="Logo" />
           </div>
           <div className="cs_footer_contact_info">
             <h3 className="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">
               Send Email
             </h3>
             <h2 className="text-white fw-medium m-0 cs_fs_22">
-              <a href="mailto:bizmax@laralink.com">bizmax@laralink.com</a>
+              <a href="mailto:info@modestuae.com">info@modestuae.com</a>
             </h2>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Footer() {
       <div className="cs_copyright text-center cs_fs_124 cs_lh_lg cs_pt_36 cs_pb_36">
         <div className="container">
           <p className="m-0">
-            Copyright © {new Date().getFullYear()} <Link to="/">bizmax</Link>.
+            Copyright © {new Date().getFullYear()} <Link to="/">MODEST</Link>.
             All rights reserved.
           </p>
         </div>

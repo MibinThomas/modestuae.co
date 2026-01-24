@@ -45,7 +45,7 @@ export default function Header({ variant }) {
                   St. Utica, Pennsylvania 57867
                 </li>
                 <li>
-                  <Link to="mailto:info@company.com">info@company.com</Link>
+                  <Link to="mailto:info@modestuae.com">info@modestuae.com</Link>
                 </li>
               </ul>
             </div>
