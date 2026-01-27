@@ -1,4 +1,4 @@
 export const pageTitle = title => {
   return (document.title =
-    title + ' | Bizmax - Corporate And Consulting Business Template');
+    title + ' | MODEST - Corporate And Bussiness Consulting Business Template');
 };
