@@ -11,7 +11,7 @@ export default function HeroStyle5({ bgImg, title, subTitle, srcUrl }) {
       style={{ backgroundImage: `url('${bgImg}')` }}
     >
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=I2SeBj6R-mc"
+        url="https://youtu.be/0LKRNZG_f3c?si=Xm5dRRjReLO5j9jB"
         width="100%"
         height="100%"
         controls={false}
