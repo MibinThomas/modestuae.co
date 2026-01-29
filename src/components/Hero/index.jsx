@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import parser from 'html-react-parser';
 import SocialBtns from '../SocialBtns';
 import ReactPlayer from 'react-player';
-import WaterWave from 'react-water-wave'
 
 export default function HeroStyle5({ bgImg, title, subTitle, srcUrl }) {
   return (
@@ -54,3 +53,4 @@ export default function HeroStyle5({ bgImg, title, subTitle, srcUrl }) {
     </section>
   );
 }
+
