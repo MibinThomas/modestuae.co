@@ -27,7 +27,7 @@ export default function Footer() {
               Have Any Question?
             </h3>
             <h2 className="text-white fw-medium m-0 cs_fs_22">
-              + 070 4531 9507
+              + (04) 252 4686
             </h2>
           </div>
           <div className="cs_footer_logo">
