@@ -5,7 +5,7 @@ import { pageTitle } from '../../helpers/PageTitle';
 
 const postData = [
   {
-    imgUrl: '/images/post_1.png', 
+    imgUrl: '/images/post_2.jpeg', 
     title: 'What services does your business provide?',
     desc: 'We provide a range of digital marketing lutions including website design.',
     postUrl: '/blog/blog-details',

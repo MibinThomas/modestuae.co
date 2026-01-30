@@ -31,7 +31,7 @@ export default function Footer() {
             </h2>
           </div>
           <div className="cs_footer_logo">
-            <img src="/images/modest2.svg" alt="Logo" />
+            <img src="/images/modest.svg" alt="Logo" />
           </div>
           <div className="cs_footer_contact_info">
             <h3 className="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">

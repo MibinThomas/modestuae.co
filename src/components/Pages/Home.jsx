@@ -180,7 +180,7 @@ const brandData = [
 
 const postData = [
   {
-    imgUrl: '/images/post_1.jpeg',
+    imgUrl: '/images/post_1.png',
     title: 'What services does your business provide?',
     desc: 'We provide a range of digital marketing lutions including website design.',
     postUrl: '/blog/blog-details',
@@ -190,7 +190,7 @@ const postData = [
     commentUrl: '/blog/blog-details',
   },
   {
-    imgUrl: '/images/post_2.jpeg',
+    imgUrl: '/images/post_2.png',
     title: 'Introducing the latest tech features for you',
     desc: 'We provide a range of digital marketing lutions including website design.',
     postUrl: '/blog/blog-details',
@@ -200,7 +200,7 @@ const postData = [
     commentUrl: '/blog/blog-details',
   },
   {
-    imgUrl: '/images/post_3.jpeg',
+    imgUrl: '/images/post_3.png',
     title: 'The creative studio programm coming soon',
     desc: 'We provide a range of digital marketing lutions including website design.',
     postUrl: '/blog/blog-details',
