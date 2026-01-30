@@ -366,7 +366,7 @@ export default function Home() {
             {
               imgUrl: '/images/icons/contact_icon_2.svg',
               titleUp: 'Send Email',
-              title: 'bizmax@laralink.com',
+              title: 'info@modestuae.co',
               textColor: 'text-white',
             },
             {
