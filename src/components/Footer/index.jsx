@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer
       className="cs_footer background-filled text-white"
-      style={{ backgroundImage: 'url("/images/footer.png")' }}
+      style={{ backgroundImage: 'url("/images/footer_bg.jpeg")' }}
     >
       <div className="container">
         <div className="cs_footer_top d-flex justify-content-between align-items-start align-items-md-center cs_pt_46 cs_pb_46 cs_column_gap_15 cs_row_gap_15 flex-md-row  flex-column">
