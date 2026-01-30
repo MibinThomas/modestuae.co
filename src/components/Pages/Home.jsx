@@ -6,10 +6,10 @@ import BrandSection from '../Section/BrandSection';
 import ContactSection from '../Section/ContactSection';
 import HeroSection from '../Section/HeroSection';
 import MovingTextSection from '../Section/MovingTextSection';
-import PortfolioSection from '../Section/PortfolioSection';
+// import PortfolioSection from '../Section/PortfolioSection';
 import PostSection from '../Section/PostSection';
 import ServiceSection from '../Section/ServiceSection';
-import TeamSection from '../Section/TeamSection';
+// import TeamSection from '../Section/TeamSection';
 import TestimonialSection from '../Section/TestimonialSection';
 import WhyChooseUsSection from '../Section/WhyChooseUsSection';
 
