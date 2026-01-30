@@ -44,45 +44,71 @@ const heroData = [
 ];
 
 const movingTextData = [
-  '* Creative Business & Finance',
-  '* Business Inspired Template',
-  '* Innovation Creative Design',
-  '* Creative Business & Finance',
+  '* Company Formation & Corporate Services',
+  '* PRO Services',
+  '* Audit & Assurance',
+  '* VAT Consulting',
+  '* Payroll Outsourcing',
+  '* Customs Audit & Consulting',
 ];
 
 const serviceData = [
   {
     iconUrl: '/images/icons/service_icon_1.svg',
-    title: 'Audit & Assurance',
+    title: 'Company Formation',
     subTitle:
-      'Independent audit and assurance services to ensure transparency and regulatory compliance',
+      'Complete UAE business setup across mainland and free zones with licensing, amendments and closure.',
     imgUrl: '/images/service_1.jpeg',
     href: '/service/services-details',
   },
   {
     iconUrl: '/images/icons/service_icon_2.svg',
-    title: 'IT Support and Consulting',
+    title: 'PRO Services',
     subTitle:
-      'Providing technical support, network setup, software installation system.',
+      'Reliable PRO services for visas, Emirates ID, labor approvals, attestations and government process.',
     imgUrl: '/images/service_2.jpeg',
     href: '/service/services-details',
   },
   {
     iconUrl: '/images/icons/service_icon_3.svg',
-    title: 'Marketing and Advertising',
+    title: 'Accounting & Bookkeeping',
     subTitle:
-      'Services that help businesses create and execute market strategies.',
+      'Accurate bookkeeping and accounting ensuring compliance, clear reporting and financial control. UAE',
     imgUrl: '/images/service_3.jpeg',
     href: '/service/services-details',
   },
   {
-    iconUrl: '/images/icons/service_icon_4.svg',
-    title: 'Human Resources',
+    iconUrl: '/images/icons/service_icon_1.svg',
+    title: 'Audit & Assurance',
     subTitle:
-      'Assistance with HR-related tasks such as recruitment, training, performance.',
+      'Independent audit and assurance services ensuring transparency, compliance and business credibility.',
     imgUrl: '/images/service_4.jpeg',
     href: '/service/services-details',
   },
+  {
+    iconUrl: '/images/icons/service_icon_4.svg',
+    title: 'VAT Consulting',
+    subTitle:
+      'End-to-end VAT registration, filing, advisory and audit support ensuring full UAE tax compliance.Across UAE',
+    imgUrl: '/images/service_4.jpeg',
+    href: '/service/services-details',
+  },
+  {
+    iconUrl: '/images/icons/service_icon_4.svg',
+    title: 'Payroll Outsourcing',
+    subTitle:
+      'Secure payroll processing with WPS compliance, salary structuring, reports and final settlements.',
+    imgUrl: '/images/service_4.jpeg',
+    href: '/service/services-details',
+  },  
+  {
+    iconUrl: '/images/icons/service_icon_4.svg',
+    title: 'Customs Consulting',
+    subTitle:
+      'Customs audit preparation and advisory ensuring trade compliance and duty optimization across UAE.',
+    imgUrl: '/images/service_4.jpeg',
+    href: '/service/services-details',
+  }, 
 ];
 
 const portfolioData = [
@@ -253,12 +279,12 @@ export default function Home() {
         pb="140"
         pbLg="80"
         className="cs_gray_bg"
-        style={{ backgroundImage: 'url("/images/services_bg.png")' }}
+        style={{ backgroundImage: 'url("/images/services_bg2.png")' }}
       >
         <ServiceSection
           sectionTitleUp="Our Service List"
           sectionTitle="We Provide The Solution <br />For Our Clients"
-          sectionSubTitle="I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection of high-quality parts and accessories."
+          sectionSubTitle="Comprehensive business consulting services covering company formation, compliance, accounting, VAT, payroll, and audits - designed to support seamless operations and sustainable growth in the UAE."
           sectionTitleDown="Digital agency  services built specifically for your business"
           sectionBtnText="Find More Services"
           sectionBtnUrl="/service"
@@ -274,25 +300,25 @@ export default function Home() {
         className="position-relative"
       >
         <AboutUsSection
-          thumbUrl="/images/experience_img.jpeg"
-          experienceBgUrl="/images/experience_bg.jpeg"
+          thumbUrl="/images/about_us_1.png"
+          experienceBgUrl="/images/about_us_2.png"
           experienceIconUrl="/images/experience_icon.svg"
-          experienceNumber="40"
+          experienceNumber="15"
           experienceTitle="Work Experience"
           sectionTitleUp="About Us"
-          sectionTitle='Get Ready for Success with <span className="text-accent">Bizmax</span> Your Path to Growth.'
+          sectionTitle='Get Ready for Success with <span className="text-accent">MODEST</span> Your Path to Growth.'
           sectionSubTitle="Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics, and other branding materials."
-          grothTitle="Web development"
+          grothTitle="Bussiness development"
           grothPercentage="90"
           featureList={[
             {
-              title: 'Accounting and Bookkeeping',
+              title: 'Company Formation',
               subTitle:
-                'Services related to financial record-keeping, bookkeeping.',
+                'Business setup across UAE mainland and free zones with complete legal support',
             },
             {
-              title: 'Human Resources (HR) Consulting',
-              subTitle: 'Assistance with HR-related tasks such as recruitment.',
+              title: 'PRO Services',
+              subTitle: 'End-to-end government, visa, and documentation assistance.',
             },
           ]}
           btnText="Get A Quote"
