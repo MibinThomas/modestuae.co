@@ -4,7 +4,7 @@ import parser from 'html-react-parser';
 import SocialBtns from '../SocialBtns';
 import ReactPlayer from 'react-player';
 
-export default function HeroStyle5({ bgImg, title, subTitle, srcUrl }) {
+export default function HeroStyle({ bgImg, title, subTitle, srcUrl }) {
   return (
     <section
       className="cs_hero cs_style_4 bg-primary position-relative d-flex align-items-center justify-content-center overflow-hidden youtube-bg"

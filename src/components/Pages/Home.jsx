@@ -17,16 +17,16 @@ const heroData = [
   {
     bgUrl: '/images/hero_main_1.jpg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Inventive and interested <br>in innovation',
+    title: 'Empowering Businesses to Start,<br>Scale,and Succeed in the UAE',
     subTitle:
-      'I have been a loyal customer of this auto parts company for years and I cannot <br>recommend them enough. Their extensive selection of high-quality parts and <br> accessories.',
+      'We provide reliable, efficient, and personalized consulting services covering company formation, <br> PRO services, finance, and compliance - designed to simplify complexity and enable sustainable business growth at every stage.',
     btnText: 'Get A Quote',
     btnUrl: '/contact',
   },
   {
     bgUrl: '/images/hero_slider_2.jpeg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Inventive and interested <br>in innovation',
+    title: 'Your Trusted Partner for Business Setup & Compliance in the UAE',
     subTitle:
       'I have been a loyal customer of this auto parts company for years and I cannot <br>recommend them enough. Their extensive selection of high-quality parts and <br> accessories.',
     btnText: 'Get A Quote',
@@ -35,9 +35,9 @@ const heroData = [
   {
     bgUrl: '/images/hero_slider_3.jpeg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Inventive and interested <br>in innovation',
+    title: 'Simplifying Business. <br> Enabling Growth.',
     subTitle:
-      'I have been a loyal customer of this auto parts company for years and I cannot <br>recommend them enough. Their extensive selection of high-quality parts and <br> accessories.',
+      'With over 15 years of consulting expertise, we deliver end-to-end business solutions - from company formation and compliance to accounting,<br> VAT, and operational support - helping startups, SMEs, and enterprises grow with confidence in the UAE’s dynamic regulatory landscape.',
     btnText: 'Get A Quote',
     btnUrl: '/contact',
   },
