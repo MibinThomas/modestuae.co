@@ -17,7 +17,7 @@ const heroData = [
   {
     bgUrl: '/images/hero_main_1.jpg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Empowering Businesses to Start,<br>Scale,and Succeed in the UAE',
+    title: 'Empowering Businesses to Start,Scale,and Succeed in the UAE',
     subTitle:
       'We provide reliable, efficient, and personalized consulting services covering company formation, <br> PRO services, finance, and compliance - designed to simplify complexity and enable sustainable business growth at every stage.',
     btnText: 'Get A Quote',
@@ -58,7 +58,7 @@ const serviceData = [
     title: 'Company Formation',
     subTitle:
       'Complete UAE business setup across mainland and free zones with licensing, amendments and closure.',
-    imgUrl: '/images/service_1.jpeg',
+    imgUrl: '/images/companyformation.png',
     href: '/service/services-details',
   },
   {
@@ -66,7 +66,7 @@ const serviceData = [
     title: 'PRO Services',
     subTitle:
       'Reliable PRO services for visas, Emirates ID, labor approvals, attestations and government process.',
-    imgUrl: '/images/service_2.jpeg',
+    imgUrl: '/images/pro.png',
     href: '/service/services-details',
   },
   {
@@ -74,7 +74,7 @@ const serviceData = [
     title: 'Accounting & Bookkeeping',
     subTitle:
       'Accurate bookkeeping and accounting ensuring compliance, clear reporting and financial control. UAE',
-    imgUrl: '/images/service_3.jpeg',
+    imgUrl: '/images/acounting.png',
     href: '/service/services-details',
   },
   {
@@ -82,7 +82,7 @@ const serviceData = [
     title: 'Audit & Assurance',
     subTitle:
       'Independent audit and assurance services ensuring transparency, compliance and business credibility.',
-    imgUrl: '/images/service_4.jpeg',
+    imgUrl: '/images/audit.png',
     href: '/service/services-details',
   },
   {
@@ -90,7 +90,7 @@ const serviceData = [
     title: 'VAT Consulting',
     subTitle:
       'End-to-end VAT registration, filing, advisory and audit support ensuring full UAE tax compliance.Across UAE',
-    imgUrl: '/images/service_4.jpeg',
+    imgUrl: '/images/vat.png',
     href: '/service/services-details',
   },
   {
@@ -98,7 +98,7 @@ const serviceData = [
     title: 'Payroll Outsourcing',
     subTitle:
       'Secure payroll processing with WPS compliance, salary structuring, reports and final settlements.',
-    imgUrl: '/images/service_4.jpeg',
+    imgUrl: '/images/payroll.png',
     href: '/service/services-details',
   },  
   {
@@ -106,7 +106,7 @@ const serviceData = [
     title: 'Customs Consulting',
     subTitle:
       'Customs audit preparation and advisory ensuring trade compliance and duty optimization across UAE.',
-    imgUrl: '/images/service_4.jpeg',
+    imgUrl: '/images/customs.png',
     href: '/service/services-details',
   }, 
 ];
