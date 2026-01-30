@@ -155,7 +155,7 @@ const testimonialData = [
     designation: 'Web design',
   },
   {
-    imgUrl: '/images/avatar_3.png',
+    imgUrl: '/images/avatar_3_1.png',
     rating: '4.5',
     desc: "I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone",
     name: 'Max Lawrence',
@@ -328,13 +328,7 @@ export default function Home() {
         />
       </Section>
 
-      <Section pt="135" ptLg="" className="bg-gray">
-        <PortfolioSection
-          sectionTitle="Take a look our <br/>Completed Projects"
-          sectionTitleUp="Our Latest Project"
-          data={portfolioData}
-        />
-      </Section>
+      
 
       <Section
         pt="135"
@@ -344,8 +338,8 @@ export default function Home() {
         className="position-relative cs_iconbox_2_wrap overflow-hidden"
       >
         <WhyChooseUsSection
-          imgUrlLeft="/images/why_choose_us_left_img.jpeg"
-          imgUrlRight="/images/why_choose_us_right_img.jpeg"
+          imgUrlLeft="/images/why_choose_us_1.png"
+          imgUrlRight="/images/why_choose_us_2.png"
           sectionTitleUp="Why Choose Us"
           sectionTitle='Developing a <span className="text-accent"> design that <br /> is easy </span> to use and <br /> navigate'
           sectionSubTitle="Providing legal advice, contract drafting, compliance
@@ -388,13 +382,13 @@ export default function Home() {
         />
       </Section>
 
-      <Section pb="115" pbLg="55">
+      {/* <Section pb="115" pbLg="55">
         <TeamSection
           data={teamData}
           sectionTitle="Meet the professional team <br/> behind the success"
           sectionTitleUp="Meet Our Team Member"
         />
-      </Section>
+      </Section> */}
 
       <Section
         pt="133"
@@ -402,7 +396,7 @@ export default function Home() {
         pb="140"
         pbLg="80"
         className="background-filled overflow-hidden"
-        style={{ backgroundImage: `url(${'/images/cta_bg.jpeg'})` }}
+        style={{ backgroundImage: `url(${'/images/contactus_bg.png'})` }}
       >
         <ContactSection
           sectionTitleUp="Contact With Us"
@@ -410,7 +404,7 @@ export default function Home() {
           sectionSubTitle="Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses."
           textVarient="text-white"
           className="cs_mb_40"
-          sectionImgUrl="/images/contact_img_1.png"
+          sectionImgUrl="/images/contactus.png"
           contactInfo={[
             {
               imgUrl: '/images/icons/contact_icon_1.svg',
