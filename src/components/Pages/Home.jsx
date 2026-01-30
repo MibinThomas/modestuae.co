@@ -17,18 +17,18 @@ const heroData = [
   {
     bgUrl: '/images/hero_main_1.jpg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Empowering Businesses to Start,Scale,and Succeed in the UAE',
+    title: 'Empowering Business <br> Growth in the UAE',
     subTitle:
-      'We provide reliable, efficient, and personalized consulting services covering company formation, <br> PRO services, finance, and compliance - designed to simplify complexity and enable sustainable business growth at every stage.',
+      'Reliable, personalized consulting for company formation, <br> PRO, finance, and compliance - simplifying growth at every stage.',
     btnText: 'Get A Quote',
     btnUrl: '/contact',
   },
   {
     bgUrl: '/images/hero_slider_2.jpeg',
     titleUp: 'This Week Only for World Premier',
-    title: 'Your Trusted Partner for Business Setup & Compliance in the UAE',
+    title: 'Your Partner for UAE <br> Business Setup',
     subTitle:
-      'I have been a loyal customer of this auto parts company for years and I cannot <br>recommend them enough. Their extensive selection of high-quality parts and <br> accessories.',
+      'From company formation to compliance, accounting, and advisory, <br> we support UAE businesses with expertise.',
     btnText: 'Get A Quote',
     btnUrl: '/contact',
   },
@@ -37,7 +37,7 @@ const heroData = [
     titleUp: 'This Week Only for World Premier',
     title: 'Simplifying Business. <br> Enabling Growth.',
     subTitle:
-      'With over 15 years of consulting expertise, we deliver end-to-end business solutions - from company formation and compliance to accounting,<br> VAT, and operational support - helping startups, SMEs, and enterprises grow with confidence in the UAE’s dynamic regulatory landscape.',
+      '15+ years of expertise delivering end-to-end business solutions <br> that help UAE companies grow with confidence.',
     btnText: 'Get A Quote',
     btnUrl: '/contact',
   },
