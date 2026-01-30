@@ -105,7 +105,7 @@ export default function AboutUsSection({
           </div>
         </div>
       </div>
-      <div className="cs_section_shape-1 position-absolute semi_rotate">
+      {/* <div className="cs_section_shape-1 position-absolute semi_rotate">
         <svg
           width={182}
           height={177}
@@ -129,7 +129,7 @@ export default function AboutUsSection({
             fillOpacity="0.2"
           />
         </svg>
-      </div>
+      </div> */}
     </>
   );
 }

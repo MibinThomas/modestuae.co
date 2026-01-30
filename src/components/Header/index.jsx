@@ -41,8 +41,7 @@ export default function Header({ variant }) {
             <div className="cs_top_header_left">
               <ul className="cs_top_nav d-flex flex-wrap align-items-center cs_fs_12 text-white m-0 p-0">
                 <li>
-                  <b className="fw-medium text-white">Address:</b> 3517 W. Gray
-                  St. Utica, Pennsylvania 57867
+                  <b className="fw-medium text-white">Address:</b> Office 301A LOB 15 JAFZA Dubai UAE
                 </li>
                 <li>
                   <Link to="mailto:info@modestuae.com">info@modestuae.com</Link>
@@ -164,7 +163,7 @@ export default function Header({ variant }) {
                       Need help? Call us:
                     </h3>
                     <h3 className="text-white m-0 cs_fs_13">
-                      (+800) 1234 5678 90
+                      (04) 252 4686
                     </h3>
                   </div>
                 </div>

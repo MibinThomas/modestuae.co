@@ -355,12 +355,12 @@ export default function Home() {
           sectionSubTitle="Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses."
           textVarient="text-white"
           className="cs_mb_40"
-          sectionImgUrl="/images/contactus.png"
+          sectionImgUrl="/images/call.png"
           contactInfo={[
             {
               imgUrl: '/images/icons/contact_icon_1.svg',
               titleUp: 'Have Any Question?',
-              title: '+ 070 4531 9507',
+              title: '+(04) 252 4686',
               textColor: 'text-white',
             },
             {
@@ -372,7 +372,7 @@ export default function Home() {
             {
               imgUrl: '/images/icons/contact_icon_3.svg',
               titleUp: 'Address',
-              title: 'Yewtree Cottage, Kings Pyon',
+              title: 'Office 301A LOB 15 JAFZA Dubai UAE',
               textColor: 'text-white',
             },
           ]}
