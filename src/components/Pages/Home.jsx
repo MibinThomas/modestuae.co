@@ -111,34 +111,6 @@ const serviceData = [
   }, 
 ];
 
-const portfolioData = [
-  {
-    imgUrl: '/images/portfolio_1.jpeg',
-    title: 'Marketing Web-design',
-    projectUrl: '/portfolio/portfolio-details',
-  },
-  {
-    imgUrl: '/images/portfolio_2.jpeg',
-    title: 'Marketing Web-design',
-    projectUrl: '/portfolio/portfolio-details',
-  },
-  {
-    imgUrl: '/images/portfolio_3.jpeg',
-    title: 'Marketing Web-design',
-    projectUrl: '/portfolio/portfolio-details',
-  },
-  {
-    imgUrl: '/images/portfolio_4.jpeg',
-    title: 'Marketing Web-design',
-    projectUrl: '/portfolio/portfolio-details',
-  },
-  {
-    imgUrl: '/images/portfolio_3.jpeg',
-    title: 'Marketing Web-design',
-    projectUrl: '/portfolio/portfolio-details',
-  },
-];
-
 const testimonialData = [
   {
     imgUrl: '/images/avatar_1.png',
@@ -195,27 +167,6 @@ const testimonialData = [
     desc: "I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone",
     name: 'Darlene Robertson',
     designation: 'Web design',
-  },
-];
-
-const teamData = [
-  {
-    imgUrl: '/images/team_member_1.jpeg',
-    name: 'Ralph Edwards',
-    designation: 'Web designer',
-    srcUrl: '/team/team-details',
-  },
-  {
-    imgUrl: '/images/team_member_2.jpeg',
-    name: 'Wade Warren',
-    designation: 'Marketing Coordinator',
-    srcUrl: '/team/team-details',
-  },
-  {
-    imgUrl: '/images/team_member_3.jpeg',
-    name: 'Jane Cooper',
-    designation: 'Creative Designer',
-    srcUrl: '/team/team-details',
   },
 ];
 
