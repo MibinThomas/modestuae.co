@@ -3,43 +3,67 @@ import Breadcrumb from '../Breadcrumb';
 import Section from '../Section';
 import AboutUsSection from '../Section/AboutSection';
 import ServiceSection from '../Section/ServiceSection';
-import TeamSection from '../Section/TeamSection';
+// import TeamSection from '../Section/TeamSection';
 import TestimonialSection from '../Section/TestimonialSection';
 import { pageTitle } from '../../helpers/PageTitle';
 
 const serviceData = [
   {
     iconUrl: '/images/icons/service_icon_1.svg',
-    title: 'Accounting and Bookkeeping',
+    title: 'Company Formation',
     subTitle:
-      'Services related to financial record-keeping, bookkeeping, preparation and action.',
-    imgUrl: '/images/service_1.jpeg',
+      'Complete UAE business setup across mainland and free zones with licensing, amendments and closure.',
+    imgUrl: '/images/companyformation.png',
     href: '/service/services-details',
   },
   {
     iconUrl: '/images/icons/service_icon_2.svg',
-    title: 'IT Support and Consulting',
+    title: 'PRO Services',
     subTitle:
-      'Providing technical support, network setup, software installation system.',
-    imgUrl: '/images/service_2.jpeg',
+      'Reliable PRO services for visas, Emirates ID, labor approvals, attestations and government process.',
+    imgUrl: '/images/pro.png',
     href: '/service/services-details',
   },
   {
     iconUrl: '/images/icons/service_icon_3.svg',
-    title: 'Marketing and Advertising',
+    title: 'Accounting & Bookkeeping',
     subTitle:
-      'Services that help businesses create and execute market strategies.',
-    imgUrl: '/images/service_3.jpeg',
+      'Accurate bookkeeping and accounting ensuring compliance, clear reporting and financial control. UAE',
+    imgUrl: '/images/acounting.png',
+    href: '/service/services-details',
+  },
+  {
+    iconUrl: '/images/icons/service_icon_1.svg',
+    title: 'Audit & Assurance',
+    subTitle:
+      'Independent audit and assurance services ensuring transparency, compliance and business credibility.',
+    imgUrl: '/images/audit.png',
     href: '/service/services-details',
   },
   {
     iconUrl: '/images/icons/service_icon_4.svg',
-    title: 'Human Resources',
+    title: 'VAT Consulting',
     subTitle:
-      'Assistance with HR-related tasks such as recruitment, training, performance.',
-    imgUrl: '/images/service_4.jpeg',
+      'End-to-end VAT registration, filing, advisory and audit support ensuring full UAE tax compliance.Across UAE',
+    imgUrl: '/images/vat.png',
     href: '/service/services-details',
   },
+  {
+    iconUrl: '/images/icons/service_icon_4.svg',
+    title: 'Payroll Outsourcing',
+    subTitle:
+      'Secure payroll processing with WPS compliance, salary structuring, reports and final settlements.',
+    imgUrl: '/images/payroll.png',
+    href: '/service/services-details',
+  },  
+  {
+    iconUrl: '/images/icons/service_icon_4.svg',
+    title: 'Customs Consulting',
+    subTitle:
+      'Customs audit preparation and advisory ensuring trade compliance and duty optimization across UAE.',
+    imgUrl: '/images/customs.png',
+    href: '/service/services-details',
+  }, 
 ];
 
 const teamData = [
@@ -108,7 +132,7 @@ export default function AboutPage() {
   }, []);
   return (
     <>
-      <Breadcrumb title="About Us" bgUrl="/images/page_header_1.jpeg" />
+      <Breadcrumb title="About Us" bgUrl="/images/breadcrumb.png" />
 
       <Section
         pt="135"
@@ -118,24 +142,24 @@ export default function AboutPage() {
         className="position-relative"
       >
         <AboutUsSection
-          thumbUrl="/images/experience_img.jpeg"
-          experienceBgUrl="/images/experience_bg.jpeg"
+          thumbUrl="/images/about_us_1.png"
+          experienceBgUrl="/images/about_us_2.png"
           experienceIconUrl="/images/experience_icon.svg"
           experienceNumber="40"
           experienceTitle="Work Experience"
           sectionTitleUp="About Us"
-          sectionTitle='Get Ready for Success with <span className="text-accent">Bizmax</span> Your Path to Growth.'
+          sectionTitle='Get Ready for Success with <span className="text-accent">MODEST</span> Your Path to Growth.'
           sectionSubTitle="Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics, and other branding materials."
           grothTitle="Web development"
           grothPercentage="90"
           featureList={[
             {
-              title: 'Accounting and Bookkeeping',
+              title: 'Company Formation',
               subTitle:
                 'Services related to financial record-keeping, bookkeeping.',
             },
             {
-              title: 'Human Resources (HR) Consulting',
+              title: 'PRO Services',
               subTitle: 'Assistance with HR-related tasks such as recruitment.',
             },
           ]}
@@ -156,13 +180,13 @@ export default function AboutPage() {
         />
       </Section>
 
-      <Section pt="133" ptLg="75">
+      {/* <Section pt="133" ptLg="75">
         <TeamSection
           data={teamData}
           sectionTitle="Meet the professional team <br/>behind the success"
           sectionTitleUp="Meet Our Team Member"
         />
-      </Section>
+      </Section> */}
 
       <Section
         pt="110"
