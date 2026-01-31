@@ -66,26 +66,26 @@ const serviceData = [
   }, 
 ];
 
-const teamData = [
-  {
-    imgUrl: '/images/team_member_1.jpeg',
-    name: 'Ralph Edwards',
-    designation: 'Web designer',
-    srcUrl: '/team/team-details',
-  },
-  {
-    imgUrl: '/images/team_member_2.jpeg',
-    name: 'Wade Warren',
-    designation: 'Marketing Coordinator',
-    srcUrl: '/team/team-details',
-  },
-  {
-    imgUrl: '/images/team_member_3.jpeg',
-    name: 'Jane Cooper',
-    designation: 'Creative Designer',
-    srcUrl: '/team/team-details',
-  },
-];
+// const teamData = [
+//   {
+//     imgUrl: '/images/team_member_1.jpeg',
+//     name: 'Ralph Edwards',
+//     designation: 'Web designer',
+//     srcUrl: '/team/team-details',
+//   },
+//   {
+//     imgUrl: '/images/team_member_2.jpeg',
+//     name: 'Wade Warren',
+//     designation: 'Marketing Coordinator',
+//     srcUrl: '/team/team-details',
+//   },
+//   {
+//     imgUrl: '/images/team_member_3.jpeg',
+//     name: 'Jane Cooper',
+//     designation: 'Creative Designer',
+//     srcUrl: '/team/team-details',
+//   },
+// ];
 
 const testimonialData = [
   {
