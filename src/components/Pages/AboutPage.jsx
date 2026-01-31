@@ -6,7 +6,6 @@ import ServiceSection from '../Section/ServiceSection';
 // import TeamSection from '../Section/TeamSection';
 import TestimonialSection from '../Section/TestimonialSection';
 import { pageTitle } from '../../helpers/PageTitle';
-import AboutStyle from '../about/AboutStyle';
 
 const serviceData = [
   {
