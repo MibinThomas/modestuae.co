@@ -3,7 +3,6 @@ import Breadcrumb from '../Breadcrumb';
 import Section from '../Section';
 import AboutUsSection from '../Section/AboutSection';
 import ServiceSection from '../Section/ServiceSection';
-// import TeamSection from '../Section/TeamSection';
 import TestimonialSection from '../Section/TestimonialSection';
 import { pageTitle } from '../../helpers/PageTitle';
 
