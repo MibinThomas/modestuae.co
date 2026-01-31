@@ -6,6 +6,7 @@ import ServiceSection from '../Section/ServiceSection';
 // import TeamSection from '../Section/TeamSection';
 import TestimonialSection from '../Section/TestimonialSection';
 import { pageTitle } from '../../helpers/PageTitle';
+import AboutStyle from '../about/AboutStyle';
 
 const serviceData = [
   {
@@ -66,26 +67,26 @@ const serviceData = [
   }, 
 ];
 
-// const teamData = [
-//   {
-//     imgUrl: '/images/team_member_1.jpeg',
-//     name: 'Ralph Edwards',
-//     designation: 'Web designer',
-//     srcUrl: '/team/team-details',
-//   },
-//   {
-//     imgUrl: '/images/team_member_2.jpeg',
-//     name: 'Wade Warren',
-//     designation: 'Marketing Coordinator',
-//     srcUrl: '/team/team-details',
-//   },
-//   {
-//     imgUrl: '/images/team_member_3.jpeg',
-//     name: 'Jane Cooper',
-//     designation: 'Creative Designer',
-//     srcUrl: '/team/team-details',
-//   },
-// ];
+const teamData = [
+  {
+    imgUrl: '/images/team_member_1.jpeg',
+    name: 'Ralph Edwards',
+    designation: 'Web designer',
+    srcUrl: '/team/team-details',
+  },
+  {
+    imgUrl: '/images/team_member_2.jpeg',
+    name: 'Wade Warren',
+    designation: 'Marketing Coordinator',
+    srcUrl: '/team/team-details',
+  },
+  {
+    imgUrl: '/images/team_member_3.jpeg',
+    name: 'Jane Cooper',
+    designation: 'Creative Designer',
+    srcUrl: '/team/team-details',
+  },
+];
 
 const testimonialData = [
   {
@@ -149,25 +150,28 @@ export default function AboutPage() {
           experienceTitle="Work Experience"
           sectionTitleUp="About Us"
           sectionTitle='Get Ready for Success with <span className="text-accent">MODEST</span> Your Path to Growth.'
-          sectionSubTitle="Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics, and other branding materials."
-          grothTitle="Web development"
+          sectionSubTitle="With over 15 years of experience in the consulting industry, we specialize in delivering comprehensive business solutions designed to support companies at every stage of their growth. Our expertise spans across company formation, compliance, financial services, and operational support—ensuring that our clients launch, run, and scale their businesses with confidence and efficiency.
+We pride ourselves on our commitment to excellence, personalized service, and deep understanding of the UAE’s dynamic regulatory environment. Whether you’re a startup, SME, or multinational enterprise, our team is equipped to guide you with strategic insight and practical solutions.
+<br>We pride ourselves on our commitment to excellence, personalized service, and deep understanding of the UAE’s dynamic regulatory environment. Whether you’re a startup, SME, or multinational enterprise, our team is equipped to guide you with strategic insight and practical solutions."
+          grothTitle="Company Formation & Corporate Services"
           grothPercentage="90"
           featureList={[
             {
-              title: 'Company Formation',
+              title: 'Our Mission',
               subTitle:
-                'Services related to financial record-keeping, bookkeeping.',
+                'To empower businesses with reliable, efficient, and innovative consulting services that simplify processes, ensure compliance, and enable sustainable growth.',
             },
             {
-              title: 'PRO Services',
-              subTitle: 'Assistance with HR-related tasks such as recruitment.',
+              title: 'Our Vision',
+              subTitle: 'To be the leading consulting partner in the region—recognized for trust, expertise, and value—helping businesses succeed in an ever-evolving economic landscape.',
             },
           ]}
           btnText="Get A Quote"
           btnUrl="/contact"
           videoBtnText="Watch the video"
-          videoBtnUrl="https://www.youtube.com/embed/0Tz4Ycjbdbg"
+          videoBtnUrl="https://www.youtube.com/embed/dItYhwMyBH8?si=vTPeKiR_eF2bpxKQ&amp;start=10"
         />
+        
       </Section>
 
       <Section pt="140" ptLg="80" pb="130" pbLg="70" className="bg-primary">
