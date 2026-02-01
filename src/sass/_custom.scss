@@ -341,3 +341,25 @@ select.cs_shop-input {
   background-color: $accent;
   box-shadow: none;
 }
+
+.cs_service_link_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.cs_service_link_btn.is-active {
+  font-weight: 700;
+}
+
+.cs_service_link_btn.is-active svg,
+.cs_service_link_btn.is-active span {
+  opacity: 1;
+}
