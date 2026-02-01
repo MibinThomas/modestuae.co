@@ -1,56 +1,168 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Breadcrumb from '../Breadcrumb';
 import Section from '../Section';
 import SectionHeadingStyle2 from '../SectionHeading/SectionHeadingStyle2';
 import Accordion from '../Accordion';
 import IconboxStyle5 from '../Iconbox/IconboxStyle5';
-import { NavLink } from 'react-router-dom';
 import FormStyle5 from '../Form/FormStyle5';
-import { Icon } from '@iconify/react';
 import FormStyle6 from '../Form/FormStyle6';
 import Button from '../Button';
+import { Icon } from '@iconify/react';
 import { pageTitle } from '../../helpers/PageTitle';
 
-const serviceList = [
-  { title: 'Company Formation & Corporate Services', href: '/service/services-details' },
+const servicesData = [
   {
+    slug: 'company-formation',
+    title: 'Company Formation & Corporate Services',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Establishing a business is more than just a filing process- it’s the foundation of your future growth.`,
+    description: `At MODEST Business Consulting, we specialize in seamless company formation and comprehensive corporate services tailored to entrepreneurs, SMEs, and international corporations.`,
+    quote: `“ We simplify business setup and compliance so you can focus on growth. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
+  },
+
+  {
+    slug: 'pro-services',
     title: 'PRO Services',
-    href: '/service/marketing-and-advertising',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Fast, compliant PRO services that keep your business running smoothly.`,
+    description: `We handle visas, labor processes, Emirates ID support, renewals, and government approvals with complete transparency.`,
+    quote: `“ Reliable PRO support that saves time, cost, and compliance risk. ”`,
+    expertiseTitle: 'What We Handle',
+    expertiseDesc: `From documentation to approvals—we manage the entire workflow.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Visa Processing & Renewals' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'Government Approvals & Docs' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'Do you provide urgent processing?', desc: 'Yes, depending on the case and authority timelines.' },
+      { title: 'Can you manage renewals annually?', desc: 'Yes, we offer AMC-style PRO support plans.' },
+    ],
+  },
+{
+    slug: 'Bookkeeping & Accounting',
+    title: 'Bookkeeping & Accounting',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Accurate and timely bookkeeping and accounting services tailored to your business needs.`,
+    description: `At MODEST Business Consulting, we provide comprehensive bookkeeping and accounting services to help you stay compliant and financially organized.`,
+    quote: `“ We ensure your financial records are accurate, up-to-date, and compliant. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
   },
   {
-    title: 'Bookkeeping & Accounting',
-    href: '/service/IT Support and Consulting',
+    slug: 'Audit & Assurance',
+    title: 'Audit & Assurance',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Comprehensive audit and assurance services to ensure compliance and financial integrity.`,
+    description: `MODEST Business Consulting offers professional audit and assurance services to help your business maintain financial transparency and regulatory compliance.`,
+    quote: `“ We provide independent assurance that your financial statements are accurate and reliable. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
   },
-  { title: 'Audit & Assurance', href: '/service/human-resources' },
-  { title: 'VAT Consulting', href: '/service/web-development' },
-  { title: 'Payroll Outsourcing', href: '/service/seo-content-writing' },
-  { title: 'Customs Audit & Consulting', href: '/service/seo-content-writing' },
+  {
+    slug: 'VAT Consulting',
+    title: 'VAT Consulting',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Expert VAT consulting services to help you navigate UAE tax regulations and optimize your VAT compliance.`,
+    description: `MODEST Business Consulting provides expert VAT consulting services to help businesses in UAE navigate complex tax regulations and optimize their VAT compliance.`,
+    quote: `“ We ensure your VAT obligations are met with minimal disruption to your operations. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
+  },
+  {
+    slug: 'Payroll Outsourcing',
+    title: 'Payroll Outsourcing',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Expert payroll outsourcing services to help you manage employee compensation efficiently.`,
+    description: `MODEST Business Consulting offers comprehensive payroll outsourcing services to help businesses in UAE manage employee compensation efficiently and accurately.`,
+    quote: `“ We handle your payroll with precision and compliance. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
+  },
+
+  {
+    slug: 'Customs Audit & Consulting',
+    title: 'Customs Audit & Consulting',
+    heroImg: '/images/service-details-img-1.png',
+    intro: `Expert customs audit and consulting services to help you navigate UAE customs regulations.`,
+    description: `MODEST Business Consulting provides expert customs audit and consulting services to help businesses in UAE navigate complex customs regulations and optimize their compliance.`,
+    quote: `“ We ensure your customs obligations are met with minimal disruption to your operations. ”`,
+    expertiseTitle: 'Our Core Expertise',
+    expertiseDesc: `The right structure today prevents the legal headaches of tomorrow. Let our team handle your setup with precision.`,
+    featureBoxes: [
+      { iconUrl: '/images/icons/iconbox_icon_8.svg', title: 'Accounting and Bookkeeping' },
+      { iconUrl: '/images/icons/iconbox_icon_9.svg', title: 'IT Support and Consulting' },
+    ],
+    galleryImg: '/images/service-details-img-2.png',
+    faqs: [
+      { title: 'What services does your business provide?', desc: 'We provide end-to-end formation and corporate services tailored to your needs.' },
+      { title: 'How much do your services cost?', desc: 'Pricing depends on jurisdiction and scope. Contact us for a tailored quote.' },
+    ],
+  },
+
+  // Add the rest similarly...
 ];
 
-const faqData = [
-  {
-    title: 'What services does your business provide?',
-    desc: "Our pricing varies depending on the specific services you require and the scope of your project. We offer customized solutions to fit each client's unique needs and budget. Please contact us.",
-  },
-  {
-    title: 'How much do your services cost?',
-    desc: "Our pricing varies depending on the specific services you require and the scope of your project. We offer customized solutions to fit each client's unique needs and budget. Please contact us.",
-  },
-  {
-    title: 'Do you offer any guarantees or refunds?',
-    desc: "Our pricing varies depending on the specific services you require and the scope of your project. We offer customized solutions to fit each client's unique needs and budget. Please contact us.",
-  },
-  {
-    title: 'How do I get started with your services?',
-    desc: "Our pricing varies depending on the specific services you require and the scope of your project. We offer customized solutions to fit each client's unique needs and budget. Please contact us.",
-  },
-];
 
 export default function ServiceDetailsPage() {
   pageTitle('Service Details');
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
+  useEffect(() => window.scrollTo(0, 0), []);
+
+  const [activeSlug, setActiveSlug] = useState(servicesData[0]?.slug);
+
+  const activeService = useMemo(
+    () => servicesData.find((s) => s.slug === activeSlug) || servicesData[0],
+    [activeSlug]
+  );
+
   return (
     <>
       <Breadcrumb title="Service Details" bgUrl="/images/breadcrumb.png" />
@@ -58,27 +170,36 @@ export default function ServiceDetailsPage() {
       <Section pt="140" ptLg="80" pb="115" pbLg="55">
         <div className="container">
           <div className="row">
+            {/* LEFT */}
             <div className="col-xl-4 col-lg-5 cs_mb_lg_60">
               <div className="cs_service_list cs_mb_40">
                 <h2 className="cs_fs_20 text-white text-uppercase bg-accent cs_pl_30 cs_pr_30 cs_pt_23 cs_pb_23 m-0">
                   All Services
                 </h2>
+
                 <ul className="m-0 cs_pl_30 cs_pr_30 cs_pt_30 cs_pb_30">
-                  {serviceList?.map((item, index) => (
-                    <li key={index}>
-                      <NavLink to={item.href}>
-                        {item.title}
-                        <Icon icon="fa6-solid:arrow-right-long" />
-                      </NavLink>
-                    </li>
-                  ))}
+                  {servicesData.map((item) => {
+                    const isActive = item.slug === activeSlug;
+                    return (
+                      <li key={item.slug}>
+                        <button
+                          type="button"
+                          onClick={() => setActiveSlug(item.slug)}
+                          className={`cs_service_link_btn ${isActive ? 'is-active' : ''}`}
+                          aria-current={isActive ? 'page' : undefined}
+                        >
+                          <span>{item.title}</span>
+                          <Icon icon="fa6-solid:arrow-right-long" />
+                        </button>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
+
               <div
                 className="cs_quick_contact_card background-filled cs_mb_40 text-center"
-                style={{
-                  backgroundImage: `url('/images/service-list-card.jpeg')`,
-                }}
+                style={{ backgroundImage: `url('/images/service-list-card.png')` }}
               >
                 <div className="cs_quick_contact_card_in">
                   <div className="cs_quick_contact_card_icon cs_height_100 cs_width_100 bg-accent d-flex align-items-center justify-content-center rounded-circle cs_mb_24">
@@ -128,61 +249,51 @@ export default function ServiceDetailsPage() {
                   <Button btnText="Contact Us" btnUrl="/contact" />
                 </div>
               </div>
+
               <div className="bg-gray cs_pl_30 cs_pr_30 cs_pt_55 cs_pb_60">
                 <h2 className="cs_fs_26 cs_mb_25">Quick Contact</h2>
                 <FormStyle5 />
               </div>
             </div>
+
+            {/* RIGHT */}
             <div className="col-xl-8 col-lg-7">
               <img
-                src="/images/service-details-img-1.png"
-                alt="Thumb"
+                src={activeService.heroImg}
+                alt={activeService.title}
                 className="cs_mb_40"
               />
-              <h2 className="cs_fs_26 cs_mb_20">Company Formation &amp; Corporate Services</h2>
-              <p className="cs_mb_40">
-                Establishing a business is more than just a filing process- it’s the foundation of your future growth. At MODEST Business Consulting, we specialize in seamless company formation and comprehensive corporate services tailored to entrepreneurs, SMEs, and international corporations.
 
-                <br/>With a deep understanding of regulatory frameworks and compliance landscapes, we simplify the complexities of starting and maintaining a business, allowing you to focus on what matters most: your vision.
-              </p>
-              <blockquote className="cs_blockquote fw-semibold cs_pt_35 cs_pb_35 cs_pl_40 cs_pr_40 bg-white shadow-lg cs_rounded_5 cs_mb_40">
-                “ Lorem Ipsum is simply free text not dummy available
-                typesetting industry been the industry standard Lorem ipsum is
-                simply free text ”
-              </blockquote>
+              <h2 className="cs_fs_26 cs_mb_20">{activeService.title}</h2>
+
               <p className="cs_mb_40">
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci velit, sed quia non numquam eius modi
-                tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam,
+                {activeService.intro}
+                <br />
+                {activeService.description}
               </p>
+
+              <blockquote className="cs_blockquote fw-semibold cs_pt_35 cs_pb_35 cs_pl_40 cs_pr_40 bg-white shadow-lg cs_rounded_5 cs_mb_40">
+                {activeService.quote}
+              </blockquote>
+
               <div className="row cs_mb_30">
                 <div className="col-xl-6">
                   <img
-                    src="/images/service-details-img-2.jpeg"
+                    src={activeService.galleryImg}
                     alt=""
                     className="cs_rounded_15 cs_mb_30"
                   />
                 </div>
                 <div className="col-xl-6">
-                  <h3 className="cs_fs_26 cs_mb_15">Our benefits</h3>
-                  <p className="cs_mb_40">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam
-                    quaerat voluptatem. Ut enim ad minima veniam.
-                  </p>
-                  <IconboxStyle5
-                    iconUrl="/images/icons/iconbox_icon_8.svg"
-                    title="Accounting and Bookkeeping"
-                  />
-                  <IconboxStyle5
-                    iconUrl="/images/icons/iconbox_icon_9.svg"
-                    title="IT Support and Consulting"
-                  />
+                  <h3 className="cs_fs_26 cs_mb_15">{activeService.expertiseTitle}</h3>
+                  <p className="cs_mb_40">{activeService.expertiseDesc}</p>
+
+                  {activeService.featureBoxes?.map((f, idx) => (
+                    <IconboxStyle5 key={idx} iconUrl={f.iconUrl} title={f.title} />
+                  ))}
                 </div>
               </div>
+
               <div className="cs_section_heading cs_style_1 cs_mb_30">
                 <div className="cs_section_heading_in">
                   <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base cs_mb_15">
@@ -191,25 +302,26 @@ export default function ServiceDetailsPage() {
                   <h2 className="cs_fs_36 cs_mb_0">Questions & Answers</h2>
                 </div>
               </div>
-              <Accordion data={faqData} />
+
+              <Accordion data={activeService.faqs || []} />
             </div>
           </div>
         </div>
       </Section>
 
+      {/* Keep your bottom contact section as-is */}
       <Section
         pt="133"
         ptLg="75"
         pb="140"
         pbLg="80"
-        style={{ backgroundImage: `url('/images/contact_bg_2.jpeg')` }}
+        style={{ backgroundImage: `url('/images/contact_bg_2.png')` }}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2">
               <SectionHeadingStyle2
-                sectionTitle="Feel Free to Get in Touch<br/>
-                with Ralph"
+                sectionTitle="Feel Free to Get in Touch<br/>with Our Experts"
                 sectionTitleUp="Meet Our Team Member"
                 textVarient="text-white"
               />
