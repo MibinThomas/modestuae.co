@@ -50,7 +50,7 @@ export default function Nav({ setMobileToggle }) {
           About
         </Link>
       </li>
-      <li className="menu-item-has-children">
+      {/* <li className="menu-item-has-children">
         <Link to="#">Pages</Link>
         <DropDown>
           <ul>
@@ -121,7 +121,7 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li>
+      </li> */}
       <li>
         <Link to="/service" onClick={() => setMobileToggle(false)}>
           Services

@@ -12,18 +12,19 @@ import Button from '../Button';
 import { pageTitle } from '../../helpers/PageTitle';
 
 const serviceList = [
-  { title: 'Accounting and Bookkeeping', href: '/service/services-details' },
+  { title: 'Company Formation & Corporate Services', href: '/service/services-details' },
   {
-    title: 'Marketing and Advertising',
+    title: 'PRO Services',
     href: '/service/marketing-and-advertising',
   },
   {
-    title: 'IT Support and Consulting',
+    title: 'Bookkeeping & Accounting',
     href: '/service/IT Support and Consulting',
   },
-  { title: 'Human Resources', href: '/service/human-resources' },
-  { title: 'Web Development', href: '/service/web-development' },
-  { title: 'SEO & Content Writing', href: '/service/seo-content-writing' },
+  { title: 'Audit & Assurance', href: '/service/human-resources' },
+  { title: 'VAT Consulting', href: '/service/web-development' },
+  { title: 'Payroll Outsourcing', href: '/service/seo-content-writing' },
+  { title: 'Customs Audit & Consulting', href: '/service/seo-content-writing' },
 ];
 
 const faqData = [
@@ -52,7 +53,7 @@ export default function ServiceDetailsPage() {
   }, []);
   return (
     <>
-      <Breadcrumb title="Service Details" bgUrl="/images/page_header_1.jpeg" />
+      <Breadcrumb title="Service Details" bgUrl="/images/breadcrumb.png" />
 
       <Section pt="140" ptLg="80" pb="115" pbLg="55">
         <div className="container">
@@ -76,7 +77,7 @@ export default function ServiceDetailsPage() {
               <div
                 className="cs_quick_contact_card background-filled cs_mb_40 text-center"
                 style={{
-                  backgroundImage: `url('/images/service-list-card.jpeg')`,
+                  backgroundImage: `url('/images/service-list-card.png')`,
                 }}
               >
                 <div className="cs_quick_contact_card_in">
@@ -134,27 +135,15 @@ export default function ServiceDetailsPage() {
             </div>
             <div className="col-xl-8 col-lg-7">
               <img
-                src="/images/service-details-img-1.jpeg"
+                src="/images/service-details-img-1.png"
                 alt="Thumb"
                 className="cs_mb_40"
               />
-              <h2 className="cs_fs_26 cs_mb_20">Business &amp; finance</h2>
+              <h2 className="cs_fs_26 cs_mb_20">Company Formation &amp; Corporate Services</h2>
               <p className="cs_mb_40">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur
+                Establishing a business is more than just a filing process- it’s the foundation of your future growth. At MODEST Business Consulting, we specialize in seamless company formation and comprehensive corporate services tailored to entrepreneurs, SMEs, and international corporations.
+
+                <br/>With a deep understanding of regulatory frameworks and compliance landscapes, we simplify the complexities of starting and maintaining a business, allowing you to focus on what matters most: your vision.
               </p>
               <blockquote className="cs_blockquote fw-semibold cs_pt_35 cs_pb_35 cs_pl_40 cs_pr_40 bg-white shadow-lg cs_rounded_5 cs_mb_40">
                 “ Lorem Ipsum is simply free text not dummy available
@@ -171,18 +160,16 @@ export default function ServiceDetailsPage() {
               <div className="row cs_mb_30">
                 <div className="col-xl-6">
                   <img
-                    src="/images/service-details-img-2.jpeg"
+                    src="/images/service-details-img-2.png"
                     alt=""
                     className="cs_rounded_15 cs_mb_30"
                   />
                 </div>
                 <div className="col-xl-6">
-                  <h3 className="cs_fs_26 cs_mb_15">Our benefits</h3>
+                  <h3 className="cs_fs_26 cs_mb_15">Our Core Expertise</h3>
                   <p className="cs_mb_40">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam
-                    quaerat voluptatem. Ut enim ad minima veniam.
+                    The right structure today prevents the legal headaches of tomorrow. 
+                    <br/>Let our team of specialists handle your corporate secretarial needs and company setup with precision and care.
                   </p>
                   <IconboxStyle5
                     iconUrl="/images/icons/iconbox_icon_8.svg"
@@ -213,14 +200,14 @@ export default function ServiceDetailsPage() {
         ptLg="75"
         pb="140"
         pbLg="80"
-        style={{ backgroundImage: `url('/images/contact_bg_2.jpeg')` }}
+        style={{ backgroundImage: `url('/images/contact_bg_2.png')` }}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2">
               <SectionHeadingStyle2
                 sectionTitle="Feel Free to Get in Touch<br/>
-                with Ralph"
+                with Our Experts"
                 sectionTitleUp="Meet Our Team Member"
                 textVarient="text-white"
               />

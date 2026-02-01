@@ -5,35 +5,35 @@ export default function FormStyle6() {
     <form className="row">
       <div className="col-lg-6">
         <input
-          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-dark"
+          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-white"
           type="text"
           placeholder="Your Name"
         />
       </div>
       <div className="col-lg-6">
         <input
-          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-dark"
+          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-white"
           type="text"
           placeholder="Email Address"
         />
       </div>
       <div className="col-lg-6">
         <input
-          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-dark"
+          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-white"
           type="text"
           placeholder="Phone"
         />
       </div>
       <div className="col-lg-6">
         <input
-          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-dark"
+          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_35 bg-input-white"
           type="text"
           placeholder="Subject"
         />
       </div>
       <div className="col-lg-12">
         <textarea
-          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_40 bg-input-dark"
+          className="form-control cs_fs_14 cs_rounded_5 border-0 cs_mb_40 bg-input-white"
           placeholder="Message here ..."
           cols={35}
           rows={7}
